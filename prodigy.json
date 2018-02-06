@@ -1,0 +1,21 @@
+{
+  "theme": "eighties",
+  "custom_theme": {},
+  "batch_size": 10,
+  "port": 8080,
+  "host": "localhost",
+  "cors": true,
+  "db": "sqlite",
+  "db_settings": {
+    "sqlite": {
+      "name": "prodigy.db",
+      "path": "./"
+    }
+  },
+  "auto_create": true,
+  "show_stats": true,
+  "show_flag": true,
+  "hide_meta": false,
+  "diff_style": "words",
+  "html_template": false
+}

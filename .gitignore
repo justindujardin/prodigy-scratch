@@ -1,0 +1,11 @@
+.idea
+prodigy-builds
+
+# virtualenv and python
+bin/
+man/
+lib/
+include/
+share/
+.Python
+pip-selfcheck.json
