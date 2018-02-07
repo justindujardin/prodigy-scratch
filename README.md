@@ -19,6 +19,7 @@ sudo pip install --upgrade virtualenv
 virtualenv --system-site-packages -p python3 ./
 source ./bin/activate 
 pip install -r requirements.txt
+python -m spacy download en
 ```
 
 Then install your prodigy whl from file
