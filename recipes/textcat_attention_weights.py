@@ -132,7 +132,6 @@ def evaluate(dataset, spacy_model, source, label='', api=None,
         log('RECIPE: Initialised TextClassifier with model {}'
             .format(spacy_model), model.nlp.meta)
 
-
     def on_exit(ctrl):
         examples = ctrl.db.get_dataset(dataset)
         data = dict(model.evaluate(examples))
