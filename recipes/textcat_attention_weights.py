@@ -26,14 +26,11 @@ def attach_attention_data(input_stream, nlp, attn_weights):
             tokens_data.append({
                 't': token.text_with_ws,
                 'c': color,
-                's': max(0.7, 1 + weight * 2),
+                's': min(2.5, 1 + weight * 2),
                 'w': weight
             })
-        item['data'] = {
-            'tokens': tokens_data
-        }
+        item['tokens'] = tokens_data
         yield item
-    return input_stream
 
 
 # Load custom template
