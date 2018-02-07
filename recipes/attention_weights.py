@@ -1,4 +1,8 @@
-"""Get attention weights out of the ParametricAttention layer."""
+"""
+Get attention weights out of the ParametricAttention layer.
+
+By @honnibal: https://support.prodi.gy/t/highlighting-the-matching-words-for-text-classfication/254/6
+"""
 from contextlib import contextmanager
 
 from thinc.api import layerize
