@@ -16,6 +16,5 @@
   "show_stats": true,
   "show_flag": true,
   "hide_meta": false,
-  "diff_style": "words",
-  "html_template": false
+  "diff_style": "words"
 }
