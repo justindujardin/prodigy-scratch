@@ -23,9 +23,11 @@ def visualize(model, output_path, tensor_name):
   with open(os.path.join(output_path, meta_file), 'wb') as file_metadata:
     for i, (key, vector) in enumerate(vectors.items()):
       placeholder[i] = vector
+      if key not in model.vocab.strings:
+        continue
       text = model.vocab[key].text
       # https://github.com/tensorflow/tensorflow/issues/9094
-      file_metadata.write("{0}\n".format(text if text != '' else '<Empty Line>').encode('utf-8'))
+      file_metadata.write("{0}\n".format('<Space>' if text.lstrip() == '' else text).encode('utf-8'))
 
   # define the model without training
   sess = tf.InteractiveSession()
